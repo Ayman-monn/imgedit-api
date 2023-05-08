@@ -78,3 +78,6 @@ def download_file(name):
     return send_from_directory(app.config['DOWNLOAD_FOLDER'], name)
 
 
+
+if __name__ == '__main__':
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
